@@ -239,7 +239,7 @@ class Requirements extends Facade
 }
 
 /**
- * Class MailHog.
+ * Class Mailpit.
  *
  * @method static void install()
  * @method static void ensureInstalled()
@@ -252,7 +252,7 @@ class Requirements extends Facade
  * @method static void status()
  * @method static void uninstall()
  */
-class Mailhog extends Facade
+class Mailpit extends Facade
 {
 }
 

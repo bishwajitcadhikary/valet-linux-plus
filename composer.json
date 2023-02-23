@@ -1,5 +1,5 @@
 {
-    "name": "genesisweb/valet-linux-plus",
+    "name": "bishwajitcadhikary/valet-linux-plus",
     "description": "Advanced local development experience for Linux.",
     "keywords": [
         "laravel",
@@ -36,6 +36,10 @@
         {
             "name": "Gensis Web",
             "email": "info@genesisweb.co.in"
+        },
+        {
+            "name": "Bishwajit Adhikary",
+            "email": "bishwajitcadhikary@gmail.com"
         }
     ],
     "autoload": {
