@@ -20,7 +20,7 @@ use Symfony\Component\Console\Question\ConfirmationQuestion;
  */
 Container::setInstance(new Container());
 
-$version = 'v1.7.3';
+$version = 'v1.7.4';
 
 $app = new Application('ValetLinux+', $version);
 
