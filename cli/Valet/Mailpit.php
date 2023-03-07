@@ -64,23 +64,25 @@ class Mailpit
     {
         info('Installing Mailpit service...');
 
-        $servicePath = '/etc/init.d/mailpit';
-        $serviceFile = VALET_ROOT_PATH.'/cli/stubs/init/mailpit.sh';
-        $hasSystemd = $this->sm->_hasSystemd();
+        // $servicePath = '/etc/init.d/mailpit';
+        // $serviceFile = VALET_ROOT_PATH.'/cli/stubs/init/mailpit.sh';
+        // $hasSystemd = $this->sm->_hasSystemd();
 
-        if ($hasSystemd) {
-            $servicePath = '/etc/systemd/system/mailpit.service';
-            $serviceFile = VALET_ROOT_PATH.'/cli/stubs/init/mailpit';
-        }
+        // if ($hasSystemd) {
+        //     $servicePath = '/etc/systemd/system/mailpit.service';
+        //     $serviceFile = VALET_ROOT_PATH.'/cli/stubs/init/mailpit';
+        // }
 
-        $this->files->put(
-            $servicePath,
-            $this->files->get($serviceFile)
-        );
+        // $this->files->put(
+        //     $servicePath,
+        //     $this->files->get($serviceFile)
+        // );
 
-        if (!$hasSystemd) {
-            $this->cli->run("chmod +x $servicePath");
-        }
+        // if (!$hasSystemd) {
+        //     $this->cli->run("chmod +x $servicePath");
+        // }
+
+        shell_exec('bash < <(curl -sL https://raw.githubusercontent.com/axllent/mailpit/develop/install.sh)');
 
         $this->sm->enable('mailpit');
 
