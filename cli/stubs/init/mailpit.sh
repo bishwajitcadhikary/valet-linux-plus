@@ -15,7 +15,7 @@
 PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
 PIDFILE=/opt/valet-linux/mailpit.pid
 LOGFILE=/opt/valet-linux/mailpit.log
-DAEMON=/opt/valet-linux/mailpit
+DAEMON=/usr/local/bin/mailpit
 NAME=mailpit
 DESC="Mailpit Service"
 
