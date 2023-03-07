@@ -45,7 +45,5 @@ chmod +x /usr/local/bin/valet
 echo "Installing Valet's Composer dependencies..."
 /usr/bin/php $COMPOSER_PATH install -d $HOME/.valet-cli > /dev/null 2>&1
 
-bash < <(curl -sL https://raw.githubusercontent.com/axllent/mailpit/develop/install.sh)
-
 # Run the Valet server installation process
 /usr/local/bin/valet install
