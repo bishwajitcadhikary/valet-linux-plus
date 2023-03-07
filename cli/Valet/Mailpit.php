@@ -82,7 +82,7 @@ class Mailpit
         //     $this->cli->run("chmod +x $servicePath");
         // }
 
-        shell_exec('bash < <(curl -sL https://raw.githubusercontent.com/axllent/mailpit/develop/install.sh)');
+        shell_exec('wget -qO- https://raw.githubusercontent.com/axllent/mailpit/develop/install.sh | sudo bash');
 
         $this->sm->enable('mailpit');
 
